@@ -6,5 +6,6 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Gusta\\AulaFrontAjax\\' => array($baseDir . '/src'),
+    'Jarouche\\ViaCEP\\' => array($vendorDir . '/jarouche/viacep/src'),
+    'App\\' => array($baseDir . '/src'),
 );

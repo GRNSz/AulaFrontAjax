@@ -8,10 +8,9 @@
 </head>
 <body>
     <h1>Aula Sobre Front e Ajax</h1>
-    <form action="./controllers/mainController.php?r=SiteController&action=enviar" method="POST">
-        <input type="text" name="nome" id="nome" placeholder="Nome" required>
-        <input type="text" name="email" id="email" placeholder="Email" required>
-        <input type="text" name="telefone" id="telefone" placeholder="Telefone" required>
-        <button type="button" class="login-btn" onclick="enviar()">Enviar</button>
+    <form action="./controllers/mainController.php?r=SiteController&action=index" method="GET">
+        <label for="cep">Digite o CEP</label>
+        <input type="text" name="CEP" id="cep">
+        <input type="submit" onclick="enviar()">
 </body>
 </html>

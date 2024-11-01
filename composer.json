@@ -3,7 +3,7 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Gusta\\AulaFrontAjax\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [
@@ -12,5 +12,7 @@
             "email": "gugzribeiro@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "jarouche/viacep": "^1.2"
+    }
 }

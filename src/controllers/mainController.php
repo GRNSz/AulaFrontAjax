@@ -16,7 +16,7 @@
 
     # Detecta se a requisição é o metodo POST
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $routeControllerClass = "MeuProjeto\\controllers\\" . $rota;
+    $routeControllerClass = "App\\controllers\\" . $rota;
     $rotaControllerInstance = new $routeControllerClass();
     $rotaControllerInstance->$action($_POST);
 }
