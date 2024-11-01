@@ -16,19 +16,6 @@
                 console.log(document.getElementById("resposta").innerHTML = text);
             });
         }
-
-        console.log("Aguarde...")
-        let = fetch(reqSiteController).then(processaResposta);
-        console.log("Aguarde...")
-        let = fetch(reqSiteController).then(processaResposta);
-        console.log("Aguarde...")
-        let = fetch(reqSiteController).then(processaResposta);
-        console.log("Aguarde...")
-        let = fetch(reqSiteController).then(processaResposta);
-        console.log("Aguarde...")
-        let = fetch(reqSiteController).then(processaResposta);
-       // alert(promise);
-        console.log("Fim do Teste");
     </script>
 
 </head>
