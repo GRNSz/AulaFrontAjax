@@ -4,23 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
-    <script>
-
-        console.log("Início do Teste");
-        let urlSiteController = "http://localhost:8080/controllers/siteController.php";
-        const reqSiteController = new Request(urlSiteController);
-        
-        function processaResposta(resp) {
-            resp.text().then(function(text) {
-                console.log(document.getElementById("resposta").innerHTML = text);
-            });
-        }
-    </script>
-
+    <script src="./views/JavaScript/SistemaAjax.js"></script>
 </head>
 <body>
     <h1>Aula Sobre Front e Ajax</h1>
-    <span id="resposta"></span>
+    <form action="./controllers/mainController.php?r=SiteController&action=enviar" method="POST">
+        <input type="text" name="nome" id="nome" placeholder="Nome" required>
+        <input type="text" name="email" id="email" placeholder="Email" required>
+        <input type="text" name="telefone" id="telefone" placeholder="Telefone" required>
+        <button type="button" class="login-btn" onclick="enviar()">Enviar</button>
 </body>
 </html>
