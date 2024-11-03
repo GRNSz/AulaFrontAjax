@@ -16,6 +16,8 @@
         // Após, utilizo o método "Open" para iniciar a requisição utilizando o método GET.
         // Informo true no final para indicar que é uma requisição assíncrona.
         function loadContent() {
+
+            // Declarando a váriavel responsável por fazer a requisição para o JS  com Ajax.
             var xhr = new XMLHttpRequest();
             xhr.open('GET', './controllers/testeController.php', true);
             xhr.onreadystatechange = function () {
